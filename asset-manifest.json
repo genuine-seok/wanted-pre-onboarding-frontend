@@ -1,13 +1,25 @@
 {
   "files": {
-    "main.css": "/wanted-pre-onboarding-frontend/static/css/main.e1faaa9e.css",
-    "main.js": "/wanted-pre-onboarding-frontend/static/js/main.bb0b7b88.js",
+    "main.css": "/wanted-pre-onboarding-frontend/static/css/main.0b942de2.css",
+    "main.js": "/wanted-pre-onboarding-frontend/static/js/main.3e580c96.js",
+    "static/media/SpoqaHanSansNeo-Thin.ttf": "/wanted-pre-onboarding-frontend/static/media/SpoqaHanSansNeo-Thin.b8666c6d2d1d929509a1.ttf",
+    "static/media/SpoqaHanSansNeo-Light.ttf": "/wanted-pre-onboarding-frontend/static/media/SpoqaHanSansNeo-Light.008270707379c4b4bc51.ttf",
+    "static/media/SpoqaHanSansNeo-Regular.ttf": "/wanted-pre-onboarding-frontend/static/media/SpoqaHanSansNeo-Regular.b935041cbcc86b551721.ttf",
+    "static/media/SpoqaHanSansNeo-Bold.ttf": "/wanted-pre-onboarding-frontend/static/media/SpoqaHanSansNeo-Bold.9a610369db9d3c28b99f.ttf",
+    "static/media/SpoqaHanSansNeo-Light.woff": "/wanted-pre-onboarding-frontend/static/media/SpoqaHanSansNeo-Light.1cb73b3acae88adbdd59.woff",
+    "static/media/SpoqaHanSansNeo-Bold.woff": "/wanted-pre-onboarding-frontend/static/media/SpoqaHanSansNeo-Bold.dc75532918fd412e27a3.woff",
+    "static/media/SpoqaHanSansNeo-Regular.woff": "/wanted-pre-onboarding-frontend/static/media/SpoqaHanSansNeo-Regular.4af655e2b88a518cc85c.woff",
+    "static/media/SpoqaHanSansNeo-Thin.woff": "/wanted-pre-onboarding-frontend/static/media/SpoqaHanSansNeo-Thin.a6efdcf0d2b696673851.woff",
+    "static/media/SpoqaHanSansNeo-Bold.woff2": "/wanted-pre-onboarding-frontend/static/media/SpoqaHanSansNeo-Bold.1db18034ccc384032a4a.woff2",
+    "static/media/SpoqaHanSansNeo-Regular.woff2": "/wanted-pre-onboarding-frontend/static/media/SpoqaHanSansNeo-Regular.452bf1579d6a73fbaffc.woff2",
+    "static/media/SpoqaHanSansNeo-Light.woff2": "/wanted-pre-onboarding-frontend/static/media/SpoqaHanSansNeo-Light.13ba65ce1663198528ba.woff2",
+    "static/media/SpoqaHanSansNeo-Thin.woff2": "/wanted-pre-onboarding-frontend/static/media/SpoqaHanSansNeo-Thin.9aab6330b7ba8adf7abf.woff2",
     "index.html": "/wanted-pre-onboarding-frontend/index.html",
-    "main.e1faaa9e.css.map": "/wanted-pre-onboarding-frontend/static/css/main.e1faaa9e.css.map",
-    "main.bb0b7b88.js.map": "/wanted-pre-onboarding-frontend/static/js/main.bb0b7b88.js.map"
+    "main.0b942de2.css.map": "/wanted-pre-onboarding-frontend/static/css/main.0b942de2.css.map",
+    "main.3e580c96.js.map": "/wanted-pre-onboarding-frontend/static/js/main.3e580c96.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1faaa9e.css",
-    "static/js/main.bb0b7b88.js"
+    "static/css/main.0b942de2.css",
+    "static/js/main.3e580c96.js"
   ]
 }
