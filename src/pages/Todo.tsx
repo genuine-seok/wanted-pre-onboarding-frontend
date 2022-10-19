@@ -11,6 +11,9 @@ import useLocalStorage from "../lib/useLocalStorage";
 import TODO_API from "../api/TODO_API";
 import axios from "axios";
 import Message from "../components/common/Message";
+import PageTitle from "../components/common/PageTitle";
+import Layout from "../components/common/Layout";
+import Button from "../components/common/Button";
 
 type GetTodoSuccessState = {
   statusCode: number;
@@ -100,12 +103,13 @@ function Todo() {
   }, []);
 
   return (
-    <div>
-      <button onClick={logout}>로그아웃</button>
+    <Layout>
+      <PageTitle>할 일 목록</PageTitle>
       {display ? <Message type="negative" message={message} /> : null}
       <TodoForm getTodos={getTodos} />
       <TodoList getTodos={getTodos} todos={todos} />
-    </div>
+      <Button onClick={logout}>로그아웃</Button>
+    </Layout>
   );
 }
 

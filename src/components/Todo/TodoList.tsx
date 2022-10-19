@@ -1,6 +1,12 @@
 import { useEffect } from "react";
+import styled from "styled-components";
 
 import TodoItem from "./TodoItem";
+
+const TodoListBlock = styled.ul`
+  padding: 2rem 0;
+  list-style: none;
+`;
 
 type Todo = {
   id: number;
@@ -22,11 +28,11 @@ const TodoList = ({ getTodos, todos }: TodoListProps) => {
   if (!todos) return <div>...로딩중입니다</div>;
 
   return (
-    <ul>
+    <TodoListBlock>
       {todos.map((todoData) => (
         <TodoItem getTodos={getTodos} key={todoData.id} data={todoData} />
       ))}
-    </ul>
+    </TodoListBlock>
   );
 };
 

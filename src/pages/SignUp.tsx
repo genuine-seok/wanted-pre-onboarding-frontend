@@ -5,6 +5,10 @@ import useInputs from "../lib/useInputs";
 import AUTH_API, { UserInfoProps } from "../api/AUTH_API";
 import axios from "axios";
 import { isValidEmail, isValidPassword } from "../lib/validation";
+import PageTitle from "../components/common/PageTitle";
+import Layout from "../components/common/Layout";
+import Button, { ButtonGroup } from "../components/common/Button";
+import { Input, InputField } from "../components/common/Input";
 
 type SignUpSuccessState = {
   statusCode?: number;
@@ -88,30 +92,43 @@ function SignUp() {
   };
 
   return (
-    <div>
-      <h1>회원가입</h1>
+    <Layout>
+      <PageTitle>회원가입</PageTitle>
       <form onSubmit={onSubmit}>
-        <label htmlFor="email">아이디</label>
-        <input name="email" type="text" value={email} onChange={onChange} />
-        <label htmlFor="password">비밀번호</label>
-        <input
-          name="password"
-          type="password"
-          value={password}
-          onChange={onChange}
-        />
+        <InputField>
+          <label htmlFor="email">이메일</label>
+          <Input
+            name="email"
+            placeholder="이메일 주소"
+            type="text"
+            value={email}
+            onChange={onChange}
+          />
+        </InputField>
+        <InputField>
+          <label htmlFor="password">비밀번호</label>
+          <Input
+            name="password"
+            placeholder="비밀번호"
+            type="password"
+            value={password}
+            onChange={onChange}
+          />
+        </InputField>
         {display ? <Message type={type} message={message} /> : null}
-        <button
-          type="submit"
-          disabled={!isValidEmail(email) || !isValidPassword(password)}
-        >
-          등록
-        </button>
+        <ButtonGroup>
+          <Button
+            type="submit"
+            disabled={!isValidEmail(email) || !isValidPassword(password)}
+          >
+            등록
+          </Button>
+          <Button type="button" onClick={goBack}>
+            돌아가기
+          </Button>
+        </ButtonGroup>
       </form>
-      <button type="button" onClick={goBack}>
-        뒤로
-      </button>
-    </div>
+    </Layout>
   );
 }
 

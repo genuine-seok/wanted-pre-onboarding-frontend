@@ -13,7 +13,11 @@ import {
 import AUTH_API from "../api/AUTH_API";
 import { isValidEmail, isValidPassword } from "../lib/validation";
 
+import Layout from "../components/common/Layout";
 import Message from "../components/common/Message";
+import PageTitle from "../components/common/PageTitle";
+import Button, { ButtonGroup } from "../components/common/Button";
+import { Input, InputField } from "../components/common/Input";
 
 type LoginSuccessState = {
   statusCode?: number;
@@ -115,30 +119,43 @@ function Login() {
   }, [isLoggedIn]);
 
   return (
-    <div>
-      <h1>로그인</h1>
+    <Layout>
+      <PageTitle>로그인</PageTitle>
       <form onSubmit={onSubmit}>
-        <label htmlFor="email">아이디</label>
-        <input name="email" type="text" value={email} onChange={onChange} />
-        <label htmlFor="password">비밀번호</label>
-        <input
-          name="password"
-          type="password"
-          value={password}
-          onChange={onChange}
-        />
-        {display ? <Message type="negative" message={message} /> : null}
-        <button type="submit" onClick={goSignUp}>
-          회원가입
-        </button>
-        <button
-          type="submit"
-          disabled={!isValidEmail(email) || !isValidPassword(password)}
-        >
-          로그인
-        </button>
+        <InputField>
+          <label htmlFor="email">이메일</label>
+          <Input
+            name="email"
+            type="text"
+            placeholder="이메일 주소"
+            value={email}
+            onChange={onChange}
+          />
+        </InputField>
+        <InputField>
+          <label htmlFor="password">비밀번호</label>
+          <Input
+            name="password"
+            type="password"
+            placeholder="비밀번호"
+            value={password}
+            onChange={onChange}
+          />
+          {display ? <Message type="negative" message={message} /> : null}
+        </InputField>
+        <ButtonGroup>
+          <Button
+            type="submit"
+            disabled={!isValidEmail(email) || !isValidPassword(password)}
+          >
+            로그인
+          </Button>
+          <Button type="submit" onClick={goSignUp}>
+            회원가입
+          </Button>
+        </ButtonGroup>
       </form>
-    </div>
+    </Layout>
   );
 }
 

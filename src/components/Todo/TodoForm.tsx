@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import TODO_API, { TodoProps } from "../../api/TODO_API";
 import { ACCESS_TOKEN } from "../../contexts/LoginContext";
 import useLocalStorage from "../../lib/useLocalStorage";
+import Button from "../common/Button";
+import { Input } from "../common/Input";
 import Message from "../common/Message";
 
 type CreateTodoSuccessState = {
@@ -84,13 +86,13 @@ function TodoForm({ getTodos }: { getTodos: () => void }) {
   return (
     <form onSubmit={onSubmit}>
       {display ? <Message type="negative" message={message} /> : null}
-      <input
+      <Input
         type="text"
         value={value}
         placeholder="할 일을 입력해주세요"
         onChange={onChange}
       />
-      <button type="submit">등록</button>
+      <Button type="submit">등록</Button>
     </form>
   );
 }

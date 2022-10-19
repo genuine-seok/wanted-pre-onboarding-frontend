@@ -2,7 +2,7 @@
   cursor: pointer;
 }
 
-.TodoItem.done .text {
+.TodoItem.isCompleted .text {
   color: #999999;
   text-decoration: line-through;
 }
