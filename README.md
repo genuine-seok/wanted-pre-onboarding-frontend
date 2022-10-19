@@ -21,4 +21,5 @@ yarn start
 ## 라이브 데모
 
 다음 URL에서 데모 환경을 확인할 수 있습니다
+
 라이브 데모: [https://genuine-seok.github.io/wanted-pre-onboarding-frontend](https://genuine-seok.github.io/wanted-pre-onboarding-frontend)
