@@ -1,0 +1,18 @@
+.TodoItem .text {
+  cursor: pointer;
+}
+
+.TodoItem.done .text {
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.TodoItem .edit {
+  cursor: pointer;
+}
+
+.TodoItem .remove {
+  color: red;
+  margin-left: 4px;
+  cursor: pointer;
+}
