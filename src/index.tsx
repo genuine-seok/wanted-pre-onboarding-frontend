@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <LoginContextProvider>
     <React.StrictMode>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <App />
       </Router>
     </React.StrictMode>
